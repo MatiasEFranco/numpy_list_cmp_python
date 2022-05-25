@@ -46,6 +46,9 @@ Tambien se lo conoce como el proceso de transformar variable numéricas en categ
 en análisis de datos.
 '''
 
+from matplotlib.pyplot import get
+
+
 if __name__ == '__main__':
     print("Acercamiento al uso de datos relacionales")
 
@@ -62,5 +65,7 @@ if __name__ == '__main__':
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
 
+    lista_compra_ida = [ producto.get(x,'NaN') for x in lista_compra_id ]
+    print(lista_compra_ida)
 
     print("terminamos")

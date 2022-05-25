@@ -12,6 +12,8 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
+import random
+
 '''
 Enunciado:
 Empecemos a jugar con las listas y su métodos, el objetivo
@@ -32,5 +34,15 @@ if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+    lista_random = [random.randrange(1,10,1) for x in range(3)]
+    print(lista_random)
+
+    if sum(lista_random) > 21:
+        print("La suma es: ", sum(lista_random), " has perdido")
+    
+    else:
+        print("La suma es: ", sum(lista_random), " y los numeros fueron ", lista_random)
+
+
 
     print("terminamos")
